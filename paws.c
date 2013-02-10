@@ -32,11 +32,10 @@ const char* ignore_clients[MAX_CLIENTS];
 int num_ignore_clients = 0;
 
 /* Keep track of clients and how many input sinks they use */
-typedef struct {
+struct {
   uint32_t idx;
   unsigned int input_sinks;
-} client_t;
-client_t clients[MAX_CLIENTS];
+} clients[MAX_CLIENTS];
 
 unsigned int active_clients;
 
