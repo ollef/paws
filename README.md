@@ -8,14 +8,14 @@ Building instructions
 ---------------------
 Install gcc, make, pkg-config and pulseaudio if necessary and then run
 
-  > $ make
+    $ make
 
 in the directory to which paws has been downloaded.
 
 Usage
 -----
 
-  > $ paws [-v] [-p pause-cmd] [-r resume-cmd] [-i ignore-client]
+    $ paws [-v] [-p pause-cmd] [-r resume-cmd] [-i ignore-client]
 
 ### `-v`
 
@@ -39,16 +39,16 @@ Example
 
 For Clementine, use the following flags:
 
-  > $ paws -p "clementine -u" -r "clementine -p" -i Clementine
+    $ paws -p "clementine -u" -r "clementine -p" -i Clementine
 
 To find out what client name to ignore for your music player, run:
 
-  > $ paws -v
+    $ paws -v
 
 If you fire up your music player and start playing some music at this point,
 paws should print e.g.:
 
-  > Client 225 (Clementine) added its first input sink (# active clients = 1)
+    Client 225 (Clementine) added its first input sink (# active clients = 1)
 
 The text in parentheses is the name that you want to ignore.
 
